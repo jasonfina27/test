@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "You are to create a fully working repo that uses ai and agents to successfully trade solana tokens. No perps only spot. We dont mess with perps or leverage. You must use node js when building.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@jup-ag/core": "^4.0.0-beta.21",
+    "@solana/web3.js": "^1.98.2",
+    "ml-regression": "^6.3.0",
+    "node-fetch": "^2.7.0"
+  }
+}
