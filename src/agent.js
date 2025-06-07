@@ -1,5 +1,5 @@
 const fetch = require('node-fetch');
-const { LinearRegression } = require('ml-regression');
+const { SLR } = require('ml-regression');
 
 async function fetchPrice(symbol) {
   const url = `https://price.jup.ag/v4/price?ids=${symbol}`;
@@ -27,7 +27,7 @@ class TradingAgent {
     if (this.prices.length < this.window) return null;
     const xs = Array.from({ length: this.prices.length }, (_, i) => i);
     const ys = this.prices;
-    this.model = new LinearRegression(xs, ys);
+    this.model = new SLR(xs, ys);
     return this.model;
   }
 
